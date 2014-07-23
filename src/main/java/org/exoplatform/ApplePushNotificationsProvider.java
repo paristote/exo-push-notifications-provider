@@ -38,7 +38,7 @@ public class ApplePushNotificationsProvider implements RejectedNotificationListe
 	 */
 	public ApplePushNotificationsProvider()
 	{
-		createPushManager("/Users/philippeexo/Work/eXo/Push-Notifications-POC/PushNotificationsCertificates.p12", "amanaplanacanalpanama");
+		createPushManager("/Users/philippeexo/Work/eXo/Push-Notifications-POC/APNs/PushNotificationsCertificates.p12", "amanaplanacanalpanama");
 		registerErrorListeners();
 	}
 	
