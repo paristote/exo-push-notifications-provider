@@ -1,4 +1,4 @@
-package org.exoplatform;
+package org.exoplatform.provider;
 
 import java.io.IOException;
 import java.security.KeyManagementException;
@@ -154,33 +154,6 @@ public class ApplePushNotificationsProvider implements RejectedNotificationListe
 			e.printStackTrace();
 		}
 	}
-	
-	
-	/**
-	 * 
-	 * @param args
-	 */
-    public static void main( String[] args )
-    {
-    	System.out.println("========================================");
-        System.out.println("Starting the Push Notifications Provider");
-        System.out.println("========================================");
-		
-        ApplePushNotificationsProvider provider = new ApplePushNotificationsProvider();
-        
-        provider.sendHelloWorldNotification();
-        
-        provider.retrieveDisabledDevices();
-        
-//        provider.terminate();
-		
-        System.out.println("====");
-        System.out.println("Done");
-        System.out.println("====");
-        
-//        System.exit(0);
-    }
-
     
     /**
      * 
